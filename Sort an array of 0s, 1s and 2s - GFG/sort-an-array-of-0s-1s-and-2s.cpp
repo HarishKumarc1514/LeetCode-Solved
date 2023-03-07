@@ -11,29 +11,7 @@ class Solution
     void sort012(int a[], int n)
     {
         // code here
-        int z=0;
-        int o=0;
-        int t=0;
-        for(int i=0;i<n;i++)
-        {
-            if(a[i]==0) z++;
-            else if(a[i]==1) o++;
-            else t++;
-        }
-        
-        int i=0;
-        while(z--){
-            a[i++]=0;
-            
-        }
-        while(o--){
-            a[i++]=1;
-            
-        }
-        while(t--){
-            a[i++]=2;
-            
-        }
+        sort(a,a+n);
          
     }
     
