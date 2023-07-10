@@ -13,15 +13,17 @@ class Solution
     int findSum(int A[], int n)
     {
     	//code here.
-    	int maxi = INT_MIN;
-    	int mini = INT_MAX;
+    // 	int maxi = INT_MIN;
+    // 	int mini = INT_MAX;
     	
-    	for(int i=0;i<n;i++){
-    	    maxi = max(A[i],maxi);
-    	    mini = min(A[i],mini);
-    	}
+    // 	for(int i=0;i<n;i++){
+    // 	    maxi = max(A[i],maxi);
+    // 	    mini = min(A[i],mini);
+    // 	}
     	
-    	return maxi+mini;
+    // 	return maxi+mini;
+    sort(A,A+n);
+    return A[0]+A[n-1];
     }
 
 };
